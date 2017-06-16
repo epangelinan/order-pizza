@@ -2,6 +2,8 @@
 var toppings = [];
 var size = "";
 var toppingSelected;
+var finalCost = 0;
+var cost = 0;
 
 //A pizza object constructor with properties for toppings and size.
 function Pizza(toppings, size) {
@@ -12,14 +14,14 @@ function Pizza(toppings, size) {
 //A prototype method for the cost of a pizza depending on the selections chosen.
 Pizza.prototype.cost = function () {
   if (this.size === "Small") {
-    //alert(10 * 1.1);
-    return 10 * 1.1;
+    cost = (this.toppings.length + 10) * 1.1;
+    return cost;
   } else if (this.size === "Medium") {
-    //alert(12 * 1.1);
-    return 12 * 1.1;
+    cost = (this.toppings.length + 12) * 1.1;
+    return cost;
   } else if (this.size === "Large") {
-    //alert(14 * 1.1);
-    return 14 * 1.1;
+    cost = (this.toppings.length + 14) * 1.1;
+    return cost;
   }
 }
 
@@ -39,6 +41,9 @@ $(document).ready(function() {
     });
     alert(toppings);
     var newPizza = new Pizza(toppings, size);
-    alert(newPizza.cost());
+    finalCost = newPizza.cost().toFixed(2);
+    $("#result").show();
+    $("#total-cost").text(finalCost);
   });
+
 });
