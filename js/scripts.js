@@ -21,15 +21,22 @@ Pizza.prototype.cost = function () {
 }
 
 var toppings = [];
-var size = "";
+var size = " ";
 
-var newPizza = new Pizza("cheese", "small");
+
+var newPizza = new Pizza(toppings, size);
+var toppingSelected = " ";
+newPizza.toppings.push(toppingSelected);
 newPizza.cost();
 
 
 
 //UI Logic
 $(document).ready(function() {
-  //alert("document ready");
   //Allow the user to choose toppings and size for the pizza they'd like to order.
+  $("form").submit(function(event) {
+    //alert("submit successfull!");
+    size = $("#size").val();
+    alert(size);
+  });
 });
