@@ -15,7 +15,7 @@ _This is a pizza company website where a user can choose one or more individual 
 |The user can select a topping.|cheese|cheese is selected|
 |The user can select two toppings.|cheese, pepperoni|cheese and pepperoni are selected|
 |The user can select a size.|small|small is selected|
-|Will display the final cost based on the number of toppings and size.|cheese topping, size small|12.10|
+|Will display the final cost based on the number of toppings and size.|cheese topping, size small|12.11|
 
 
 ## Setup/Installation Requirements
