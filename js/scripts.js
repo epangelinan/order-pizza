@@ -22,6 +22,9 @@ Pizza.prototype.cost = function () {
   } else if (this.size === "Large") {
     cost = (this.toppings.length + 14) * 1.1;
     return cost;
+  } else if (this.size === "X-Large") {
+    cost = (this.toppings.length + 16) * 1.1;
+    return cost;
   }
 }
 

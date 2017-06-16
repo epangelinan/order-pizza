@@ -9,9 +9,11 @@ body {
 
 h1 {
   text-align: center;
-  color: blue;
+  color: #cc0000;
 }
 
 img {
   width: 50%;
+  border-radius: 8px;
+  float: left;
 }
