@@ -13,12 +13,24 @@
       <img src="img/pizza.jpeg" alt="picture of a pizza">
       <h2>Please enter your selections below</h2>
       <form>
-        <label for="size">Size</label>
-        <select class="form-control" id="size">
-          <option>Small</option>
-          <option>Medium</option>
-          <option>Large</option>
-        </select>
+        <div class="form-group">
+          <label for="size">Size</label>
+          <select class="form-control" id="size">
+            <option>Small</option>
+            <option>Medium</option>
+            <option>Large</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="toppings">Toppings</label><br>
+          <input type="checkbox" name="topping" value="cheese">Cheese<br>
+          <input type="checkbox" name="topping" value="pepperoni">Pepperoni<br>
+          <input type="checkbox" name="topping" value="artichoke">Artichoke<br>
+          <input type="checkbox" name="topping" value="anchovy">Anchovy<br>
+          <input type="checkbox" name="topping" value="olive">Olives<br>
+          <input type="checkbox" name="topping" value="onion">Onions<br>
+        </div>
+
         <br>
         <button type="submit" class="btn">Submit</button>
       </form>
