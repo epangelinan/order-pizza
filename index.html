@@ -23,22 +23,28 @@
             <option>X-Large</option>
           </select>
         </div>
-        <div class="form-group">
-          <label for="toppings">Toppings ($1 each)</label><br>
-          <input type="checkbox" name="topping" value="cheese">Cheese<br>
-          <input type="checkbox" name="topping" value="sausage">Sausage<br>
-          <input type="checkbox" name="topping" value="pepperoni">Pepperoni<br>
-          <input type="checkbox" name="topping" value="artichoke">Artichoke<br>
-          <input type="checkbox" name="topping" value="bell-pepper">Bell Peppers<br>
-          <input type="checkbox" name="topping" value="tomato">Tomatoes<br>
-          <input type="checkbox" name="topping" value="olive">Olives<br>
-          <input type="checkbox" name="topping" value="onion">Onions<br>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="toppings">Toppings ($1 each)</label><br>
+              <input type="checkbox" name="topping" value="cheese">Cheese<br>
+              <input type="checkbox" name="topping" value="sausage">Sausage<br>
+              <input type="checkbox" name="topping" value="pepperoni">Pepperoni<br>
+              <input type="checkbox" name="topping" value="artichoke">Artichoke<br>
+              <input type="checkbox" name="topping" value="bell-pepper">Bell Peppers<br>
+              <input type="checkbox" name="topping" value="tomato">Tomatoes<br>
+              <input type="checkbox" name="topping" value="olive">Olives<br>
+              <input type="checkbox" name="topping" value="onion">Onions<br>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div id="result">
+              <h3>Total cost (+tax): $<span id="total-cost"></span></h3>
+            </div>
+          </div>
         </div>
         <button type="submit" class="btn">Submit</button>
       </form>
-      <div id="result">
-        <h2>Total cost: $<span id="total-cost"></span></h2>
-      </div>
     </div>
   </body>
 </html>
